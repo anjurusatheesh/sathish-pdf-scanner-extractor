@@ -22,7 +22,6 @@ pipeline {
                            ssh -t -t ubuntu@13.127.65.217 -o StrictHostKeyChecking=no << EOF
                             cd /home/ubuntu/sathish-pdf-scanner-extractor
                             docker-compose up -d 
-                            docker-compose down
                             logout
                             EOF
                         '''
